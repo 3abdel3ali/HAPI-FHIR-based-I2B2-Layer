@@ -7,19 +7,11 @@
     <session-factory>
         
         <property name="connection.driver_class">oracle.jdbc.OracleDriver</property>
-        <property name="connection.url">jdbc:oracle:thin:@egp-sdlatran2:1521:CDWEGP</property>
-        <property name="connection.username">4021753</property>
-        <property name="connection.password">anawa3erta3sah</property>    
+        <property name="connection.url"></property>
+        <property name="connection.username"></property>
+        <property name="connection.password"></property>    
          
-       <!--  <property name="connection.driver_class">oracle.jdbc.OracleDriver</property>
-        <property name="connection.url">jdbc:oracle:thin:@egp-sdlatran3.egp.aphp.fr:1521:CDWEGP2</property>
-        <property name="connection.username">i2b2rechdata</property>
-        <property name="connection.password">r!ch-1114</property>   -->
-        
-<!--         <property name="connection.driver_class">oracle.jdbc.OracleDriver</property> -->
-<!--         <property name="connection.url">jdbc:oracle:thin:@egp-sdlatran3.egp.aphp.fr:1521:CDWEGP2</property> -->
-<!--         <property name="connection.username">4021753</property> -->
-<!--         <property name="connection.password">anawa3erta3sah</property>   -->
+     
           
         <property name="dialect">org.hibernate.dialect.Oracle10gDialect</property>
         
@@ -47,13 +39,4 @@
         <mapping class="entity.ConceptDimension"/>
         <mapping class="entity.VisitDimension"/>
    </session-factory>
-</hibernate-configuration><!--
-  
-  
-@author Abdelali Boussadi: ce fichier dit de config contient les données nécessaires à l'établissement de la relation entre hibernate et la BD mais
-aussi entre hibernate et le fichier de mapping se trouvant dans le package enity
-
-This file allows to define connection settings with the targetted data base and Hibernate and also with the diffrent enteties represeting the diffrent tables that should persist in the data base, here 
-there is an example with the "entity.PatientDimension"
-    
-  -->
+</hibernate-configuration>
